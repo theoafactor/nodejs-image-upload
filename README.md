@@ -9,7 +9,7 @@ To install necessary packages and start the server:
 
 
 ## - PLEASE NOTE
-- The command for *running mongodb*
+- The command for **running mongodb**
 ``` 
     docker run -d -p 27018:27017 --network napa-network \
     > -e MONGO_INITDB_ROOT_USERNAME=admin \
