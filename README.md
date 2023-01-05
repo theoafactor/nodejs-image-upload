@@ -6,6 +6,15 @@ To install necessary packages and start the server:
     
     npm install && npm start
 
-Then go to [http://localhost:3000](http://localhost:3000). 
 
-Explanation - https://medium.com/@nitinpatel_20236/image-upload-via-nodejs-server-3fe7d3faa642
+
+## - PLEASE NOTE
+- The command for running mongodb
+```docker run -d -p 27018:27017 --network napa-network \
+    > -e MONGO_INITDB_ROOT_USERNAME=admin \
+    > -e MONGO_INITDB_ROOT_PASSWORD=admin \
+    > --name mongodb \
+    > mongo
+```
+
+
