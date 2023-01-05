@@ -9,7 +9,12 @@ To install necessary packages and start the server:
 
 
 ## - PLEASE NOTE
-- 1. The command for **running mongodb**
+- 1. Create the 'napa-network' network first: 
+```sh
+    docker network create napa-network
+```
+
+- 2. The command for **running mongodb**
 ``` sh
     docker run -d -p 27018:27017 --network napa-network \
     > -e MONGO_INITDB_ROOT_USERNAME=admin \
@@ -17,7 +22,7 @@ To install necessary packages and start the server:
     > --name mongodb \
     > mongo
 ```
-- 2. The command for **running mongo-express**
+- 3. The command for **running mongo-express**
 ```sh
     docker run -d -p 8081:8081 --network napa-network \
     > -e ME_CONFIG_MONGODB_ADMINUSERNAME=admin \
@@ -33,7 +38,7 @@ Remember that you need to also run the built image for the application:
     > --name napa-app \
     > napa
 ```
-I have deliberately left the .env file in the project folder. Use and it is.
+I have deliberately left the .env file in the project folder. Use as it is.
 
 
 
